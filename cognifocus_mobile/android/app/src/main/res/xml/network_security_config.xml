@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Narrowly permit cleartext HTTP only for local development endpoints -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">10.223.8.206</domain>
+        <domain includeSubdomains="true">10.134.37.206</domain>
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+        <domain includeSubdomains="true">localhost</domain>
+    </domain-config>
+</network-security-config>
